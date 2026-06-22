@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jiuyou · 一处安静的站点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fafaf9;
+            color: #2c2c2c;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+            line-height: 1.7;
+            font-weight: 400;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        /* 开场短句 ———— 极轻叙述 */
+        .opening {
+            font-size: 1.1rem;
+            letter-spacing: 0.02em;
+            color: #5b5b5b;
+            margin-bottom: 2.2rem;
+            border-left: 2px solid #d4d4d4;
+            padding-left: 1rem;
+            font-weight: 350;
+        }
+        .opening span {
+            display: block;
+            margin-top: 0.3rem;
+            font-size: 0.95rem;
+            color: #7f7f7f;
+        }
+        /* 主标题层级 clear */
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 420;
+            letter-spacing: -0.01em;
+            color: #1e1e1e;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.3;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #6b6b6b;
+            font-weight: 350;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 1rem;
+        }
+        /* 承接段落 */
+        .intro-text {
+            margin-bottom: 2.8rem;
+        }
+        .intro-text p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #3a3a3a;
+        }
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+        /* 特点列表 —— 极简卡片式 */
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 2.8rem 0 2.5rem 0;
+        }
+        .feature-item {
+            background: #ffffff;
+            padding: 1.1rem 1.5rem;
+            border-radius: 0;
+            border-left: 3px solid #cbcccb;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            transition: border-color 0.15s;
+        }
+        .feature-item:hover {
+            border-left-color: #8f8f8f;
+        }
+        .feature-item strong {
+            display: block;
+            font-weight: 460;
+            font-size: 1.05rem;
+            color: #1f1f1f;
+            letter-spacing: 0.01em;
+            margin-bottom: 0.2rem;
+        }
+        .feature-item span {
+            font-size: 0.95rem;
+            color: #535353;
+            display: block;
+        }
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2.2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.98rem;
+            color: #4b4b4b;
+            line-height: 1.6;
+        }
+        .closing a {
+            color: #3a3a3a;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b0b0b0;
+            transition: text-decoration-color 0.2s;
+        }
+        .closing a:hover {
+            text-decoration-color: #2c2c2c;
+        }
+        /* 其他内联链接 */
+        .inline-link {
+            color: #3a3a3a;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: #c5c5c5;
+            transition: text-decoration-color 0.2s;
+        }
+        .inline-link:hover {
+            text-decoration-color: #2c2c2c;
+        }
+        /* 微细节 */
+        .note {
+            font-size: 0.9rem;
+            color: #7b7b7b;
+            margin-top: 2rem;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e6e6e6;
+            margin: 2rem 0 1.2rem 0;
+        }
+        @media (max-width: 500px) {
+            body {
+                padding: 1.8rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .opening {
+                font-size: 1rem;
+                padding-left: 0.8rem;
+            }
+            .feature-item {
+                padding: 0.9rem 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 开场短句 -->
+        <div class="opening">
+            有些站点，不值得喧哗，却值得停留。
+            <span>—— 写于一次闲暇的浏览之后</span>
+        </div>
+
+        <!-- 标题与副标题 -->
+        <h1>jiuyou · 简介</h1>
+        <div class="subhead">一个不追逐焦点的个人站点 · 内容与可信的零散笔记</div>
+
+        <!-- 承接段落：从站点介绍与可信说明的角度展开 -->
+        <div class="intro-text">
+            <p>
+                初次遇见 <a href="https://m-site-jiuyou.com" class="inline-link">jiuyou</a> 的人，常常会问：这是谁写的？写的是什么？ 
+                似乎没有浮夸的欢迎语，也没有急于证明什么。页面安静地摆在那里，像一本翻到一半的书，等着你决定是否坐下来。
+            </p>
+            <p>
+                站点的内容围绕个人兴趣与有限观察展开，不承诺权威，不标榜深度，只求每一次落笔都经过自己的确认。
+                从这一点来说，它更像是数字时代的私人笔记簿——有日期，有署名，有来源可循，也有偶尔的修正附注。
+                在信息过量的年份里，这种朴素的「可信感」反而显得难得。
+            </p>
+            <p>
+                没有广告，没有追踪脚本，没有强制弹窗。页面加载之后，剩下的就是文字、链接，和一点点排版上的用心。
+                如果你在意一个站点是否值得信任，也许可以从它的克制与坦率开始判断。
+            </p>
+        </div>
+
+        <!-- 特点列表：温和叙述，不夸张 -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>内容来源可溯</strong>
+                <span>每篇文章末尾均标注参考或写作日期，不隐藏修改记录。</span>
+            </div>
+            <div class="feature-item">
+                <strong>极轻的页面结构</strong>
+                <span>无多余脚本，无第三方跟踪，仅呈现文字与必要的样式。</span>
+            </div>
+            <div class="feature-item">
+                <strong>安静的更新节奏</strong>
+                <span>不追赶热点，不制造焦虑，更新频率由作者自己的节奏决定。</span>
+            </div>
+            <div class="feature-item">
+                <strong>无广告、无会员</strong>
+                <span>整个站点没有任何付费墙或推广内容，阅读体验干净。</span>
+            </div>
+        </div>
+
+        <!-- 温和结尾，自然嵌入链接 -->
+        <div class="closing">
+            如果你也偏爱那些不急于说服你的地方，或许可以打开 
+            <a href="https://m-site-jiuyou.com">jiuyou</a> 
+            看一看。它不承诺给你答案，但至少不会浪费你的注意力。
+            <div style="margin-top: 0.8rem; font-size: 0.93rem; color: #6b6b6b;">
+                —— 页面内容基于站点公开信息整理，仅作个人介绍用途。
+            </div>
+        </div>
+
+        <!-- 极简的FAQ摘要式（非完整faq，仅片段） -->
+        <hr>
+        <div style="font-size: 0.9rem; color: #5a5a5a; margin: 1.2rem 0 0.5rem 0;">
+            <span style="font-weight: 450;">常见疑问摘要</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.92rem; color: #4d4d4d;">
+            <div><span style="font-weight: 430;">Q:</span> 站点内容可以转载吗？ <span style="font-weight: 430; margin-left: 0.5rem;">A:</span> 多数文章注明「保留权利」，转载前建议联系作者确认。</div>
+            <div><span style="font-weight: 430;">Q:</span> 是否有 RSS？ <span style="font-weight: 430; margin-left: 0.5rem;">A:</span> 当前未提供，但页面结构简单，可通过书签手动跟进。</div>
+            <div><span style="font-weight: 430;">Q:</span> 为什么叫 jiuyou？ <span style="font-weight: 430; margin-left: 0.5rem;">A:</span> 没有特别的寓意，只是一个用了多年的 ID。</div>
+        </div>
+        <div class="note">
+            · 以上仅基于站点公开内容的客观描述 ·
+        </div>
+    </div>
+</body>
+</html>
